@@ -1,0 +1,33 @@
+===========================================
+********* Advanced Java Programming *******
+===========================================
+- GUI : Graphical User interface.
+- We can create GUI by using AWT & Swings components.
+- JAVA AWT is an API which help us to develop GUI.
+- JAVA AWT components are platform dependent.
+- There are two sets of java API for graphics programming:
+1) AWT API
+2) Swing API
+- java.awt package contains huge set of predefined classes and interfaces which help us to develop our own application.
+- We can creare different controls - botton, textfield, textarea, label, etc.
+- Window creation -> i) Frame ii) Applet
+
+***Frame***
+===========
+- Frame is a predefined class which is present under java.awt package.
+- Frame is a top level window which has title bar, minimize & maximize bottons and borders.
+- Frame window is a container for the information.
+Constructors:
+-------------
+I) Frame() - It will create standard window without title.
+II)Frame(String title) - It will create standard window with title.
+Methods:
+---------
+1) void setSize(int width,int height);
+2) void setVisible(boolean flag);
+3) void setTitle(String title);
+
+Steps for creation of Frame:
+1) Create subclass from Frame class
+2) Create object of your userdefined class
+3) Invoke methods of Frame class.

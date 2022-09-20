@@ -1,0 +1,50 @@
+//program to demonstrate choice control
+import java.awt.*;
+import java.awt.event.*;
+class ChoiceDemo extends Frame implements ItemListener
+{
+	Label L1;
+	Choice  c;
+	ChoiceDemo()
+	{
+		FlowLayout f1=new FlowLayout();
+		setLayout(f1);
+		
+		setBackground(Color.green);
+		setForeground(Color.red);
+		L1=new Label("                                                       ");
+		c=new Choice();
+		c.add("Select Country");
+		c.add("India");
+		c.add("UK");
+		c.add("US");
+		c.add("Srilanka");
+		c.add("Japan");
+		c.add("China");
+		
+		c.addItemListener(this);
+		
+		add(c);
+		add(L1);
+		
+	}
+	public void itemStateChanged(ItemEvent ae)
+	{
+		String str=c.getSelectedItem();
+		if(str.equals("Select Country"))
+		{
+			L1.setText("Please select your country");
+		}
+		else
+		{
+			L1.setText("You have selected: "+str);
+		}
+	}
+	public static void main(String args[])
+	{
+		ChoiceDemo c1=new ChoiceDemo();
+		c1.setVisible(true);
+		c1.setSize(500,500);
+		c1.setTitle("Choice Control");
+	}
+}

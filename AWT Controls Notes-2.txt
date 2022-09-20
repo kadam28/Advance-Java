@@ -1,0 +1,494 @@
+====================
+***AWT Control****
+====================
+- Controls are components that allow user to interact with application.
+- Frame is a window which act as container for the controls.
+- We can add different controls onto the frame window.
+- Add controls to the window:
+	Component add(Component obj);
+- We can display component on the frame as per the below parameters. But keep in mind layout manager should be set to null.
+	void setBounds(int x,int y,int width,int height);//
+	
+- We can Remove controls from window:
+	void remove(Component obj);
+-Remove all controls from the window:
+	void removeAll();
+- AWT Supports the following types of the controls:
+1) Labels
+2) Push button
+3) Check boxes
+4) Choice list
+5) Lists
+6) Scroll bars
+7) Text Area
+8) text Field
+==============================================================
+1) Labels:
+=========
+- The easiest control of java is Label.
+- Label will display single line text. Read only.
+- Label predefined class which is present under java.awt package.
+- Labels are passive controls that do  not support any interaction with the user.
+Constructor:
+============
+I) Label() - create blank label
+II) Label(String str) - create label with string str.
+III) Label(String str, int how) - create label with string str & display string as per  the alingment specified in how.
+- The value of how must be one of these three contants:
+=> Label.LEFT
+=> Label.RIGHT
+=> Label.CENTER
+Methods:
+========
+I)  void setText(String str)
+II) String getText()
+III)void setAlingment(int how)
+Iv) int getAlingment()
+====================================================================
+***Buttons***
+=============
+- The most widely used control is the push botton.
+- A Push botton is a component which contain label.
+- Button is a predefined class which is present under java.awt package.
+Constructor:
+===========
+I) Button() - create empty botton.
+II)Button(String str) - Create botton with label str.
+Methods:
+========
+I) void setLabel(String str);
+II) String getLabel();
+===========================================================
+TextField:
+==========
+- TextField is a predefined class which is present under java.awt package.
+- TextField is a single line text entry area.
+- TextField allow user to enter string and edit the text.
+Constructor:
+------------
+I) TextField() - Creates default text field.
+II) TextField(int numchars) - Create a text field that is numchars character wide.
+III)TextField(String str) - create textfield with initial string.
+IV)TextField(String str,int numchars) - create textfield with string str and set its width.
+Methods:
+--------
+I) String getText()
+II) void setText(String str)
+III) String getSelectedText()
+IV) void select(int startindex,int endindex)
+V) boolean isEditable()
+VI)void setEditable(boolean flag)
+VII) void setEchoChar(char ch) 
+IX) char getEchoChar()
+x) boolean echoCharIsSet();
+========================================================
+***CheckBox***
+==============
+- Checkbox is a predefined class which is present under java.awt package.
+- Checkbox is a control that is used to turn an option ON or OFF.
+- Checkbox is a collection of small box which has associated one label.
+- We can change the state of checkbox by clicking on it.
+- By default checkbox is OFF.
+Constructor:
+------------
+I)  Checkbox() - create checkbox whose label is blank.
+II) Checkbox(String str) - create checkbox whose label is specified by str.
+III)Checkbox(String str,boolean flag) - Allow us to set the inital state of the checkbox.
+IV) Checkbox(String str,boolean flag,CheckboxGroup cbg) 
+V)  Checkbox(String str,CheckboxGroup cbg,boolean flag) 
+VI) CheckboxGroup() - //constructor of checkboxGroup class
+Methods:
+---------
+I) boolean getState();
+II) void setState(boolean flag);
+III) String getLabel();
+IV) void setLabel(String str);
+V) Checkbox getSelectedCheckbox();	//method of checkboxGroup class
+VI) void setSelectedCheckbox(Checkbox obj); //method of checkboxGroup class
+=================================================
+***Choice***
+============
+- Choice is a predefined class which is present under java.awt package.
+- It will create pop-up list of items from which we can select item.
+Constructor:
+------------
+I) Choice();
+
+Methods:
+--------
+I) void add(String name);
+II) String getSelectedItem()
+III)int getSelectedIndex()
+IV) int getItemCount()
+V) void select(String name)
+VI) void select(int index)
+VII) String getItem(int index)
+===================================================
+***Lists***
+============
+- List is predefined class which is present java.awt package.
+- List class provides compact, multiple choice, scrolling list.
+- List will show any numbers of choices in the visible window.
+- We can select mutliple items from the given list.
+Constructor:
+------------
+I) List() - Create default list control where we can select only one item.
+II) List(int numrows) - The value of numrows specifies the number of entries in the list that will always be visible.
+III) List(int numrows,boolean flag) - if flag is true then we can select multipe items from the given list.
+
+Methods:
+---------
+I) void add(String name)
+II) void add(String name, int index)
+III) String getSelectedItem()
+IV) int getSelectedIndex()
+V) String[] getSelectedItems()
+VI) int[] getSelectedIndexes()
+VII) int getItemCount()
+IX) String getItem(int index)
+X) void select(String name/int index)
+===============================================
+***TextArea***:
+=================
+- TextArea is a predefined class which is present under java.awt package.
+- TextArea is a multiline edit control.
+- We can insert more information in the textarea.
+- For TextArea, we can see multiples rows.
+- We can provide Vertical scrollbar and horizontal scrollbar if needed.
+Constructor:
+-------------
+I) TextArea() - Create TextArea with empty string.
+II) TextArea(String str) - Create TextArea with string str.
+III) TextArea(int numLines,int numchars)- create TextArea with specified size.
+IV) TextArea(String str,int numLines,int numchars) 
+V) TextArea(String str,int numLines,int numchars,int sbars);
+We can set value of sbars using below constants:
+-> SCROLLBARS_BOTH
+-> SCROLLBARS_NONE
+-> SCROLLBARS_HORIZONTAL_ONLY
+-> SCROLLBARS_VERTICAL_ONLY
+Methods:
+---------
+I) String getText()
+II) void setText(String str)
+III) String getSelectedText()
+IV) void select(int startindex,int endindex)
+V) boolean isEditable()
+VI)void setEditable(boolean flag)
+VII) void append(String str)
+VIII) void insert(String str,int index);
+IX) void replaceRange(String str,int startindex,int endindex);
+===============================================================
+***Scroll Bars***
+=================
+- Scrollbar is a predefined class which is present under java.awt package.
+- Scroll is used to scroll the components.
+- Scrollbar is used to select continuous values between specified minimum and maximum.
+- We can creare Vertical or horizontal scrollbar.
+Constructor:
+-------------
+I) Scrollbar()- Create vertical scrollbar.
+II) Scrollbar(int style) - We can provide style value either Scrollbar.VERTICAL or Scrollbar.HORIZONTAL.
+III) Scrollbar(int style,int initialValue,int thumbSize,int min,int max)
+
+Methods:
+-----------
+I) void setValues(int initialValue,int thumbSize,int min,int max);
+II) int getMinimum();
+III) int getMaximum();
+IV) void setUnitIncrement(int newincre)
+=======================================================
+***Menu Bars and Menus***
+===========================
+- A top level window can have menu bar associated with it.
+- Menu bar contains Menus.
+- Menus contains MenuItems. Here, drop down list will created and we will select Menuitem from the given list.
+- We will add MenuItem in Menu and then Menu will add in MenuBar.
+Constructor of MenuBar:
+--------------------------
+1) MenuBar() - it will create new Menu bar.
+
+Constructor of Menu:
+----------------------
+1) Menu()
+2) Menu(String name)
+3) Menu String name,boolean flag)
+
+Constructor of MenuItem:
+-------------------------
+1) MenuItem()
+2) MenuItem(String name)
+3) MenuItem(String name,MenuShortcut key)
+
+Methods:
+----------
+1) void add(MenuItem obj);
+2) void add(Menu obj);
+3) void setMenuBar(MenuBar obj);
+============================================================
+***Dialog Boxes***
+==================
+- Dialog box is a small window where you can display small message.
+- Dialog box can hold some awt controls.
+- Dialog box is a child window which will display on top of parent window.
+- Dialog box may be model or modelless.
+- Model Dialog Box - All input is directed to it until it is closed. This means, we can not access other part of window.
+- Modeless Dialog Box - Input focus can be directed to another window.It means, you can access other part of window.
+
+Constructor:
+------------
+I) Dialog(Frame ParentWindow, boolean mode);
+II) Dialog(Frame ParentWindow,String title,boolean mode);
+
+Where:
+       ParentWindow - object of parent window on which Dialog box can be displayed.
+	   mode - if mode is true then it is model dialog box otherwise modelless dialog box.
+	   title - Title of dialog box.
+================================================================
+***FileDialog***
+================
+- Java provides built in dialog box that is FileDialog.
+- This is standard dialog box which is provided by the operating system.
+Constructor:
+------------
+I)   FileDialog(Frame parentwindow,String title);
+II)  FileDialog(Frame parentwindow,String title,int how);
+III) FileDialog(Frame parentwindow);
+
+Where:
+       ParentWindow - object of parent window on which FileDialog box can be displayed.
+	   title - Title of Filedialog box.
+	   how - FileDialog.LOAD, FileDialog.SAVE
+===============================================================
+***Layout Managers***
+=====================
+- Layout means arrangement of components within the container.
+- Layout manager will decide where we can add the components in the container.
+- Types of Layout Managers:
+1) FlowLayout
+2) BorderLayout
+3) GridLayout
+4) CardLayout
+5) GridBagLayout
+
+- We will create instance of Layout Manager class and we can apply that layout manager on the container throught below method:
+
+void setLayout(LayoutManager obj)
+
+- The Layout Manager automatically positions all the components within the container.
+
+1) FlowLayout Manager:
+-----------------------
+- FlowLayout is the default layout manager.
+- FlowLayout manager is the one of types of layout manager.
+- Definition of this class present under java.awt package.
+Constructor:
+------------
+I) FlowLayout() - Creates default layout,which centres the components and leaves the five pixels of space between each components.
+
+II)FlowLayout(int how) - we can create layout with below alingment values.
+					FlowLayout.LEFT
+					FlowLayout.CENTER
+					FlowLayout.RIGHT
+					
+III) FlowLayout(int how,int horz,int vertz) - we can provide the vertical and horizontal space between the components.
+
+Method:
+--------
+I) void setAlingment(int how)
+==========================================================================
+***BorderLayout***
+==================
+- BorderLayout is a predefined class which is present under java.awt package.
+- The BorderLayout class implements common layout style for top level window.
+- It has four narrow,fixed length components at the edges and one large area present in the center.
+- The four sides are referred to as east,west,north,south.
+- The middle area is called as center region.
+Constructor:
+------------
+1) BorderLayout() - creates default BorderLayout.
+2) BorderLayout(int horz,int vertz) - we can specify vertical and horizontal space between the components.
+
+Method:
+----------
+1) void add(Component obj, Object region);
+
+Where:
+		region - BorderLayout.CENTER
+				 BorderLayout.EAST
+				 BorderLayout.WEST
+				 BorderLayout.SOUTH
+				 BorderLayout.NORTH
+=====================================================
+***GridLayout***
+================
+- GridLayout is a predefined class which is present under java.awt package.
+- It will display components in two dimensional grid.
+- As a part of this layout, we can define rows and columns.
+- GridLayout manager put the components in rows(left to right) and columns(top to bottom).
+Constructor:
+------------
+1) GridLayout() - it will create single column grid layout.
+2) GridLayout(int numrows,int numcolumns) - creates gridlayout with the specified no of rows and columns.
+3) GridLayout(int numrows,int numcolumns,int horz,int vertz) - Allow us to specify the horizontal and vertical space between the components.
+======================================================
+***CardLayout Manager***
+========================
+- CardLayout class is a predefined class which is present under java.awt package.
+- It will helps us to manage the multiple components, display one at a time.
+- CardLayout arrange the components in the container as card.
+- Only one card is visible at a time.
+- Container act as stack of cards.
+- Use of card layout requires bit more work than other layout.
+Constructor:
+------------
+1) CardLayout() - creates default card layout.
+2) CardLayout(int hortz,int vertz) - Allow us to specify the horizontal and vertical space between the components.
+
+Methods:
+--------
+1) void add(Component obj,Object name);
+2) void first(Container deck);
+3) void last(Container deck);
+4) void next(Container deck);
+5) void previous(Container deck);
+6) void show(Container deck, String cardname);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

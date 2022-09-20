@@ -1,0 +1,19 @@
+### Card Layout ###
+================
+- CardLayout is one of the types of layout manager.
+- CardLayout class present under java.awt package.
+- CardLayout class is used to manage the component in such a manner that only one component is visible at a time.
+- It treats each component as a card that is why it is known as CardLayout.
+-*Constructor:
+-----------------
+1)CardLayout()
+2)CardLayout(int horizontal_gap,int vertical_gap)
+
+-*Methods:
+-------------
+1) void add(Component object,String cardname);
+2) void first(Container deck)
+3) void last(Container deck)
+4) void next(Container deck)
+5) void previous(Container deck)
+6) void show(Container deck, String cardname)

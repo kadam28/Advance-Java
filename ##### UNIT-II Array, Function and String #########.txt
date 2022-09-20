@@ -1,0 +1,467 @@
+##### UNIT-II Array, Function and String ##########
+===================================================
+****ARRAY:
+----------------
+- Array is used to store set of values in a single variable name.
+- Instead of creating multiple variable for storing different values, we can create single array variable and on which we can keep multiple values.
+- Array is a special variable which can hold more than one value at a time.
+####Declaration of Array:
+----------------------------------
+- We can use constructor Array() for creation of an array.
+- In JavaScript, object and Arrays are handled almost identically.
+- Both objects and Arrays can have properties and method.
+
+1) Call it with no arguments:
+	
+		var a=new Array();
+	
+	This method will create empty array with no elements.
+
+2) Call it with single numeric argument.
+
+		var a=new Array(10);
+
+	This method will create array with specified length.
+
+3) Explicitly specify values of array:
+
+		var a=new Array(10,20,30,40,50);
+
+	This method will create array with specified elements.
+
+Example:
+//Javascript program which calculate length of array
+<html>
+<body>
+		<script language="javascript" type="text/javascript">
+				var a1=new Array();	
+				document.write("Length of a1 array is:"+a1.length);
+				var a2=new Array(10);
+				document.write("Length of a2 array is:"+a2.length);
+				var a3=new Array(10,20,30,40,50);
+				document.write("Length of a3 array is:"+a3.length);
+		</script>
+</body>
+</html>
+
+Example:
+//Javascript program to initialize array elements using subscript and index number.
+
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+					var a=new Array(5);
+					a[0]=10;
+					a[1]=20;
+					a[2]=30;
+					a[3]=40;
+					a[4]=50;
+					document.write("Element present at index 0 =>"+a[0]);
+					document.write("<br>Element present at index 1 =>"+a[1]);
+					document.write("<br>Element present at index 2 =>"+a[2]);
+					document.write("<br>Element present at index 3 =>"+a[3]);
+					document.write("<br>Element present at index 4 =>"+a[4]);
+			</script>
+</body>
+</html>
+===========================================================================
+###Adding an Array Element:
+---------------------------------------
+- Sometime, while running javascript code there is requirement to increase size of the array.
+- We can add elements into array by following two ways:
+1) Using push method array
+2) Using Length property of array
+
+- Push method is used to add new item to the end of the array and it will return new length of array.
+- Syntax:	
+		ArrayObjName.push(list of elements)
+		
+- If you want to add new element at the beginning of an array then we can use unshift() method array.
+- The value of length property of an array can be used as the index for the new array element.
+- Example:
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+					var a=new Array(3);
+					a[0]=10;
+					a[1]=20;
+					a[2]=30;
+					document.write("Original Array Elements="+a);
+					a.push(40,50);
+					document.write("<br>Array Elements after adding 40 & 50 at last="+a);
+					a.unshift(5);
+					document.write("<br>Array Elements after adding 5 at beginning="+a);
+					a[a.length]=60;
+					document.write("<br>Array Elements after adding 60 at last="+a);
+			</script>
+</body>
+</html>
+=============================================================================
+####Sorting Array Elements:
+---------------------------------------
+- To arrange the array elements in some proper order(it may be ascending or descending) is known as sorting.
+- To elements of an array can be sorted by using sort() method of an array.
+- Syntax:
+				ArrayObjName.sort()
+				
+- By default sort() method will generates output in ascending order.
+- If we want to display output in descending order then we have to use reverser() method after sort() method.
+- Example:
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+					var a=new Array(40,20,50,10,90);
+					document.write("Original Array Elements="+a);
+					a.sort();
+					document.write("<br>Array Elements After Sorting="+a);		
+					var b=new Array("Banana","Apple","Orange");
+					document.write("<br>Original Array Elements="+b);
+					b.sort();
+					document.write("<br>Array Elements After Sorting="+b);			
+					var c=new Array(1.7,1.9,1.1,1.4,1.3);
+					document.write("<br>Original Array Elements="+c);
+					c.sort();
+					document.write("<br>Array Elements After Sorting="+c);		
+
+					var d=new Array(10,20,30,1.7,1.9,1.1);
+					document.write("<br>Original Array Elements="+d);
+					d.sort();
+					document.write("<br>Array Elements After Sorting (Ascending order)="+d);	
+					d.reverse();
+					document.write("<br>Array Elements After reverser (Descending order)="+d);
+			</script>
+</body>
+</html>
+=============================================================================
+####: Combing Array Elements into a String:
+-----------------------------------------------------------
+- Sometime there is need to combine all elements of array into a single string.
+- For example:
+					var numbers=new Array("one","two","three");
+- By combining the array elements means to display contents of all array elements as string.
+- For example: 	"one,two,three"
+-We can combine array elements by using two different ways
+1) Using concat() method:
+- In this method we can combine two or more array elements together but its is separated by comma.
+- Syntax:
+				ArrayObjName.concat();
+				ArrayObjName.concat(ArrayObj2,ArrayObj3...);
+2) Using join() method:
+- Here, we can combine elements of arrays and it is separated by specified separator.
+- Syntax:
+				ArrayObjName.join([separator])
+				
+- slice() method:
+- By using this method we can retrieve any particular elements list from the given array.
+- Syntax: 
+			ArrayObjName.slice(startindex,endindex-1);
+-Example:
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+					var items=new Array("one","two","three");
+			//join() method
+					var s1=items.join()
+					document.write(s1);
+					var s2=items.join('-')
+					document.write("<br>"+s2);		
+			//concat() method		
+					var s3=items.concat();
+					document.write("<br>"+s3);		
+					var num=new Array("four","five","six");
+					var s4=items.concat(num);
+					document.write("<br>"+s4);
+			//slice() method		
+					  var  a=new Array(10,20,30,40,50,60,70,80,90);
+					  document.write("<br>"+a.slice(2,7));
+			</script>
+</body>
+</html>
+=============================================================================
+####: Changing elements of an Array:
+---------------------------------------------------
+- We can change the elements of an array by using different methods.
+- By using shift() method, we can remove beginning element of array.
+- By using pop() method, we can remove last element of an array.
+- Example:
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+					var a=new Array(10,20,30,40,50);
+					document.write("Original Array Elements:"+a);
+					a.shift()
+					document.write("<br>Array Elements after deleting first:"+a);
+					a.pop();
+					document.write("<br>Array Elements after deleting last:"+a);				
+					</script>
+</body>
+</html>
+=============================================================================
+####: Function:
+---------------
+- Function is a part of main program.
+- Function is a block of statements that will help us to solve the particular task.
+- There are two different types of functions
+1) Build-in functions - those functions which are already defined in javascript. Examples are write(), prompt(), alert(), etc.
+2) User defined functions - those functions which are defined by user.
+- Syntax: Function Definition
+
+	//function without arguments
+				function function_name()
+				{
+					//block of code
+				}
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+						function Welcome()
+						{
+								document.write("This is user defined function without arguments!!!");
+						}
+						Welcome();
+			</script>
+</body>
+</html>
+	//function with arguments
+				function function_name(Parameter-list)
+				{
+					//block of code
+				}
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+						function Addition(a,b)
+						{
+								document.write("Addition of two numbers="+(a+b));
+						}
+						Addition(100,200);
+			</script>
+</body>
+</html>
+				
+-  Syntax: Calling Function
+				function_name();						//calling function without argument
+				function_name(argument-list)	//calling function with argument
+===========================================================================
+###STRING:
+------------------
+- String is a collection of characters which contains alphabets, numbers or special symbols.
+- We can represent string by using single or double quoto.
+- String data type provided in the javascript to represent text.
+- We can create String object by using String constructor.
+- Example:
+				var str1=new String();			//empty string	
+				var str2=new String("VJTech Academy")	
+- We can create string by assign value on variable.
+- Example:
+				var s1="VJTech";
+				var s2='VJTech';
+***Methods:
+----------------
+1) Calculate length of string
+<html>
+<body>
+				<script language="javascript" type="text/javascript">
+							var str1="VJTech Academy";
+							document.write("Length of String="+str1.length);
+				</script>
+</body>
+</html>
+
+2) Concatenation of String:
+- To merge two string together is known as concatenation means store second string after the first string.
+- In Javascript, we can concate two strings by using two different ways.
+ I) By using + operator
+		var str1="VJTech";
+		var str2="Academy";
+		var str3=str1+str2;
+		str3="VJTechAcademy"
+		
+II) By using concat() method 
+	var str1=new String("VJTech");
+	var str2=new String("Academy");
+	var str3=str1.concat(str2);
+<html>
+<body>
+				<script language="javascript" type="text/javascript">
+							var str1="VJTech";
+							var str2="Academy";
+							var str3=str1+str2;
+							document.write("Concatenated String="+str3);
+							
+							var s1=new String("VJTech");
+							var s2=new String("Academy");
+							var s3=s1.concat(s2);
+							document.write("<br>Concatenated String="+s3);
+				</script>
+</body>
+</html>
+
+3) Retrieving character from given position:
+- String is an array of characters.
+- We already aware about that every characters of string has associated its own index.
+- By using charAt() method, we can retrieve any particular character from the String.
+<html>
+<body>
+				<script language="javascript" type="text/javascript">
+							var str1="VJTech";
+							document.write("Character present at index 0="+str1.charAt(0));
+							document.write("<br>Character present at index 1="+str1.charAt(1));
+							document.write("<br>Character present at index 2="+str1.charAt(2));
+							document.write("<br>Character present at index 3="+str1.charAt(3));
+							document.write("<br>Character present at index 4="+str1.charAt(4));
+							document.write("<br>Character present at index 5="+str1.charAt(5));
+				</script>
+</body>
+</html>
+
+4) Retrieving position of characters in string:
+- In JavaScript, we have two methods that can be used for retrieving the position of particular character in given string.
+- indexOf() - this method will return position of the first occurrence of character in given string. It will return -1 if character is not present in given string.
+- search() - this method search string for the specified value and it will return the position of match. It will return -1 if character is not present in given string.
+<html>
+<body>
+				<script language="javascript" type="text/javascript">
+							var str1="VJTech Academy";
+							var L1=str1.indexOf('T');
+							document.write(" Character 'A' found at position="+L1);
+							var L2=str1.search('Academy');
+							document.write("<br>'Academy' found at position="+L2);
+				</script>
+</body>
+</html>
+
+5) Dividing Text:
+=================
+- Here, we can use split() method for dividing the text.
+- In this method , we can provide separator/delimiter and on the basis of that split method will divide given string.
+- The concat method is used to combine two string object together whereas split() method is used to divide given string on the basis of provided separator.
+- Syntax:
+				StringObjName.split(Separator,limit);
+- Where:
+			separator - it is optional argument which is character that use for divide the given string.
+			limit- it is optional argument which is used to limit how much elements returned to an array.
+- Example:
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+						var str="How are you?";
+						var s1=str.split();
+						document.write(s1);
+						var s2=str.split("o");
+						document.write("<br>"+s2);	
+						var s3=str.split(" ",2);
+						document.write("<br>"+s3);						
+			</script>
+</body>
+</html>
+
+6) Copying a Substring:
+=========================
+- If we want to retrieve small portion of given string then we can use substring() and substr() javascript methods.
+I) substring():
+- this method will retrieve the characters between start index and end index.
+- Syntax:
+					StringObjName.substring(startindex,endindex);
+- This method will retrieve the characters which are present between startindex to endindex-1;
+- here, endindex is optional argument, if we have not passed then it will consider last index as end index.
+II) substr():
+- This method will extracts the charcaters from the string which is starting from startindex and end with specified length.
+-Syntax:
+				StringObjName.substr(startindex,length);
+
+- Example:
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+						var str="JavaScript is a Scripting language.";
+						document.write(str.substring(16,25));
+						document.write("<br>"+str.substring(16));
+						document.write("<br>"+str.substr(16,9));
+			</script>
+</body>
+</html>
+
+7) Changing the case of the string:
+- JavaScript provides two methods which will helps us to manipulate the case of string:
+I) toLowerCase():
+- This method is used to convert all characters of given string into Lower Case.
+II) toUpperCase():
+- This method is used to convert all characters of given string into Upper Case.
+-Example:
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+						var str="VJTech Academy";
+						document.write("Lower case:"+str.toLowerCase());
+						document.write("<br>Upper case:"+str.toUpperCase());					
+			</script>
+</body>
+</html>
+
+8) Converting String to Number:
+=========================
+- In this section ,we can see how to convert given string into number.
+- following are the methods which we can use for converting string to number:
+I) parseInt()
+- This method will convert given string into integer number.
+- Example:
+		var str='123';
+		var a=parseInt(str);		//it will return 123
+II) parseFloat():
+- This method will convert given string into float number.
+- Example:
+		var str='123.45';
+		var s=parseFloat(str);		// it will return 123.45
+		
+III) Number():
+- This method is used to convert string into number. 
+- This method will work for complete number and decimal number.
+-Example:
+				var str1='98';
+				var str2='157.98';
+				var a1=Number(str1);		//it will return 98
+				var a2=Number(str2);		//it will return 157.98
+				
+9) Converting Numbers to String:
+==========================
+- In javascript, we have two different ways to convert numbers to string.
+I) toString():
+- This method is used to convert given number into string.
+- Number can be decimal or integers.
+- Example:
+				var num1=100;
+				var str1=num1.toString();		//it will return '100'
+				var num2=145.50;
+				var str2=num2.toString();		//it will return '145.50'
+				
+II) Contenation Operator (+):
+- We can use + operator to convert given number to string.
+- Example:
+				var num=100;
+				var str=num+" ";
+				
+10) Finding Unicode of Character:
+================================
+- In this section, we can retrieve ASCII value of given character and also we can try to retrieve  character from given ASCII.
+- Following methods are required:
+I) charCodeAt():
+- This method is used to retrieve ASCII value of given character.
+- Syntax:
+				StringObjName.charCodeAt([position]);
+- For example, suppose given character is 'A' then by using above method we will get its corresponding ASCII code 65.
+
+
+II) fromCharCode():
+- This method is used to retrieve character from given ASCII value.
+- For example, suppose given ASCII value is 65 then then by using above method we will get its corresponding character 'A'.
+
+<html>
+<body>
+			<script language="javascript" type="text/javascript">
+						var str="VJTech Academy";
+						document.write("ASCII Value of A="+str.charCodeAt(7));
+						document.write("<br>Character Value of ASCII 65="+String.fromCharCode(65));
+			</script>
+</body>
+</html>

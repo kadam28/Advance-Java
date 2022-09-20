@@ -1,0 +1,366 @@
+===================================
+***UNIT-II Swings***
+===================================
+- Swing is an extension of AWT.
+- Swing provides more powerful, flexible and interactive components.
+- Swing components are light weight.
+- Swing is a set of classes.
+- In addition to the familiar components, such as buttons, label,textfield,check boxes, swing supplies several addinional components Eg  - trees,tables,tabbed panes, scroll panes.
+- Swing components are platform independant.
+- For every swing components, we can use character 'J' prefix.
+- Examples - JButton,JLabel,JTextField,JTabbedPane,JTable,JTree,JComboBox,etc.
+Swing Features:
+----------------
+1) Light weight
+2) Rich Controls
+3) Borders
+4) Tooltips
+5) Easy Scrolling
+6) Better look and feel
+
+- Swing components follow Model-View-Controller(MVC) architecture.
+====================================
+***JFrame***
+=============
+- JFrame is a top level window on which we can display swing components.
+- JFrame is a predefined class which is present under javax.swing package.
+- Frame is a top level window which has title bar,menu bar, resizing corner,etc.
+Constructor:
+------------
+1) JFrame() - create Frame without title
+2) JFrame(String title) - Create Frame with title.
+
+Methods:
+--------
+1) void setVisible(Boolean flag);
+2) void setSize(int width,int height);
+3) void setTitle(String title);
+=========================================================
+***JLabel***
+============
+- One of the simplest Swing component is JLabel.
+- JLabel is a predefined class which is present under javax.swing package.
+- It is used to create single line read only text which describe the other component.
+- JLabel can display test as well as images.
+Constructor:
+-------------
+1) JLabel() - Creates emptry Label.
+2) JLabel(String str) - create Label with specified string str.
+3) JLabel(ImageIcon ii) - Create Label having icon image.
+4) JLabel(String str,ImageIcon ii) - Create Label with string & image.
+5) JLabel(String str,ImageIcon ii,int how) how->JLabel.CENTER,JLabel.LEFT,JLabel.RIGHT
+Methods:
+---------
+1) String getText();
+2) void setText(String str);
+3) void setIcon(ImageIcon ii);
+4) void setAlignment(int how);
+5) int getAlignment();
+=========================================================
+***ImageIcon***
+============
+- ImageIcon class is used to display image.
+Constructor:
+------------
+1) ImageIcon(String filename)
+2) ImageIcon(URL url)
+
+Methods:
+----------
+1) int getIconHeight();
+2) int getIconWidth();
+=========================================================
+***JButton***
+=============
+- This class is used to create push buttons.
+- JButton class present under javax.swing package.
+Constructor:
+--------------
+1) JButton() - Create empty buttons
+2) JButton(String str) - create button with specified label str.
+3) JButton(ImageIcon ii) - create button having icon image.
+4) JButton(String str,ImageIcon ii) - create button with specified string & image.
+Methods:
+-------
+1) void setText(String str);
+2) String getText();
+3) void setIcon(ImageIcon ii);
+4) ImageIcon getIcon();
+=========================================
+***JRadioButton***
+==================
+- This class is used to create radio button with text or icon.
+- JRadioButton class is a predefined class which is present under javax.swing package.
+- We can create radio button group using ButtonGroup class. We can select only on button from the group.
+Constructor:
+-------------
+1) JRadioButton() - Creates empty radio button with no text or icon.
+2) JRadioButton(String str) - Create a radio button having label.
+3) JRadioButton(ImageIcon ii) - Create radio button with image icon.
+4) JRadioButton(String str,ImageIcon ii) - Create radio button with text and icon.
+5) JRadioButton(String str, ImageIcon ii,boolean flag) - if flag is true then button is selected otherwise not.
+6) JRadioButton(String str,Boolean flag) - if flag is true then button is selected otherwise not.
+
+ButtonGroup Class:
+-------------------
+- We can create group of radio button from which we can select only one item at a time.
+========================================
+***JTextField***
+================
+- This is used to enter single line of text.
+Constructor:
+-------------
+1) JTextField() - create new text field.
+2) JTextField(int columns) - creates new empty text field with the no of columns.
+3) JTextField(String str) - creates new text field with initial string str.
+4) JTextField(String str,int columns) - Create new TextField with specified text and columns.
+=========================================
+***JTextArea***
+===============
+- JTextArea is used to create multiline textfield.
+- JTextArea class itself does not hanling scrolling part.
+Constructor:
+------------
+1) JTextArea() - Create new TextArea
+2) JTextArea(int rows,int columns) - Create textarea with specified rows and columns.
+3) JTextArea(String str) - Create text area with specified string.
+4) JTextArea(String str,int rows,int columns) - creates text area with initial string and specified no of rows and columns.
+============================================
+***JCheckBox***
+===============
+- JCheckBox is a control that may be turned ON or OFF.
+- JCheckBox is a collection of rectangle box and one text associated it.
+- By defualt checkbox is deselected.
+- JCheckBox is a predefined class which is present under javax.swing package.
+- It is used to create checkbox in swing.
+Constructor:
+------------
+1) JCheckBox()- create checkbox without string
+2) JCheckBox(String str) - create checkbox with string
+3) JCheckBox(String str,Boolean flag) - if flag is true then checkbox is selected otherwise not.
+4) JCheckBox(ImageIcon ii) - create checkbox with image
+5) JCheckBox(ImageIcon ii,boolean flag) - if flag is true then checkbox is selected otherwise not.
+6) JCheckBox(String str,ImageIcon ii) - It will create checkbox with string and image.
+7) JCheckBox(String str,ImageIcon ii, boolean flag) 
+==================================================
+***JList****
+==============
+- It will create range of elements arranged one after another.
+- We can select one or group of JList items.
+Constructor:
+------------
+1) JList() 
+2) JList(object []data)
+===================================================
+***JComboBox***
+===============
+- Pop-up list
+- select one item at a time.
+Constructor:
+------------
+1) JComboBox();
+2) JComboBox(Objet []items);
+3) JComboBox(ComBoXModel obj);
+
+Methods:
+----------
+void addItem(Object obj);
+======================================================
+***JTabbedPane***
+=================
+- A tabbed pane is a component that appears as a group of folders in file cabinet. Each folder has title.
+- When user select folder then its contents become visible.
+- Only one of the folders may be selected at a time.
+- Tabbed panes are commonly used for setting configurtion options.
+- JTabbedPane is a predefined class which is present under javax.swing package.
+Constructor:
+------------
+1) JTabbedPane() - creates an empty tab pane which is present at TOP.
+2) JTabbedPane(int tabplacement) - Creates an empty tab pane with specified tab placement of any of the following.
+     - JTabbedPane.TOP
+	 - JTabbedPane.BOTTOM
+	 - JTabbedPane.LEFT
+	 - JTabbedPane.RIGHT
+3) JTabbedPane(int tabplacement,int tabLayoutPolicy) - tabLayoutPolicy may be either of the following:
+     - JTabbedPane.WRAP_TAB_LAYOUT
+	 - JTabbedPane.SCROLL_TAB_LAYOUT
+	 
+Methods:
+-----------
+1) void addTab(String str,Component obj);
+==========================================
+***Tool Tips***
+================
+- When our mouse move over the component then some information will get displayed becaus of the toop tips.
+- Methods: void setToolTipText(String str);
+============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

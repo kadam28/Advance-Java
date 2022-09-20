@@ -1,0 +1,170 @@
+===================================
+***UNIT-II Swings***
+===================================
+- Swing is an extension of AWT.
+- Swing provides more powerful, flexible and interactive components.
+- Swing components are light weight.
+- Swing is a set of classes.
+- In addition to the familiar components, such as buttons, label,textfield,check boxes, swing supplies several addinional components Eg  - trees,tables,tabbed panes, scroll panes.
+- Swing components are platform independant.
+- For every swing components, we can use character 'J' prefix.
+- Examples - JButton,JLabel,JTextField,JTabbedPane,JTable,JTree,JComboBox,etc.
+Swing Features:
+----------------
+1) Light weight
+2) Rich Controls
+3) Borders
+4) Tooltips
+5) Easy Scrolling
+6) Better look and feel
+
+- Swing components follow Model-View-Controller(MVC) architecture.
+====================================
+***JFrame***
+=============
+- JFrame is a top level window on which we can display swing components.
+- JFrame is a predefined class which is present under javax.swing package.
+- Frame is a top level window which has title bar,menu bar, resizing corner,etc.
+Constructor:
+------------
+1) JFrame() - create Frame without title
+2) JFrame(String title) - Create Frame with title.
+
+Methods:
+--------
+1) void setVisible(Boolean flag);
+2) void setSize(int width,int height);
+3) void setTitle(String title);
+=========================================================
+***JLabel***
+============
+- One of the simplest Swing component is JLabel.
+- JLabel is a predefined class which is present under javax.swing package.
+- It is used to create single line read only text which describe the other component.
+- JLabel can display test as well as images.
+Constructor:
+-------------
+1) JLabel() - Creates emptry Label.
+2) JLabel(String str) - create Label with specified string str.
+3) JLabel(ImageIcon ii) - Create Label having icon image.
+4) JLabel(String str,ImageIcon ii) - Create Label with string & image.
+5) JLabel(String str,ImageIcon ii,int how) how->JLabel.CENTER,JLabel.LEFT,JLabel.RIGHT
+Methods:
+---------
+1) String getText();
+2) void setText(String str);
+3) void setIcon(ImageIcon ii);
+4) void setAlignment(int how);
+5) int getAlignment();
+=========================================================
+***ImageIcon***
+============
+- ImageIcon class is used to display image.
+Constructor:
+------------
+1) ImageIcon(String filename)
+2) ImageIcon(URL url)
+
+Methods:
+----------
+1) int getIconHeight();
+2) int getIconWidth();
+=========================================================
+***JButton***
+=============
+- This class is used to create push buttons.
+- JButton class present under javax.swing package.
+Constructor:
+--------------
+1) JButton() - Create empty buttons
+2) JButton(String str) - create button with specified label str.
+3) JButton(ImageIcon ii) - create button having icon image.
+4) JButton(String str,ImageIcon ii) - create button with specified string & image.
+Methods:
+-------
+1) void setText(String str);
+2) String getText();
+3) void setIcon(ImageIcon ii);
+4) ImageIcon getIcon();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

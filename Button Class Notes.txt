@@ -1,0 +1,13 @@
+##BUTTON##
+===========
+- Most widely used component is Button.
+- Push botton.
+*Constructor:
+----------------
+1) Button() - it will create button without label.
+2) Button(String label) - it will create button with label.
+
+*Methods:
+------------
+1) void setLabel(String label);
+2) String getLabel();

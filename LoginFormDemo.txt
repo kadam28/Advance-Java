@@ -1,0 +1,61 @@
+//program to display login form.
+import java.awt.*;
+import java.awt.event.*;
+class LoginFormDemo extends Frame implements ActionListener
+{
+	Label L4;
+	TextField tf1,tf2;
+	LoginFormDemo()
+	{
+		setLayout(null);
+		setBackground(Color.yellow);
+		setForeground(Color.red);
+		Font f1=new Font("Times New Roman",Font.BOLD|Font.ITALIC,20);
+		
+		Label L1=new Label("VJTECH SOFTWARE PVT LTD",Label.CENTER);
+		L1.setFont(f1);
+		Label L2=new Label("USER NAME:",Label.RIGHT);
+		Label L3=new Label("PASSWORD:",Label.RIGHT);
+		L4=new Label("                    ");
+		tf1=new TextField(30);
+		tf2=new TextField(30);
+		tf2.setEchoChar('*');
+		Button b1=new Button("Sign in");
+		
+		L1.setBounds(260,100,350,100);
+		L2.setBounds(200,200,150,30);
+		tf1.setBounds(400,200,190,30);
+		L3.setBounds(200,250,150,30);
+		tf2.setBounds(400,250,190,30);
+		b1.setBounds(350,330,100,40);
+		L4.setBounds(500,330,200,40);
+		
+		b1.addActionListener(this);
+		
+		add(L1);
+		add(L2);add(tf1);
+		add(L3);add(tf2);
+		add(b1);add(L4);
+	}
+	public void actionPerformed(ActionEvent ae)
+	{
+		String un=tf1.getText();
+		String psw=tf2.getText();
+		if(un.equals("vjtechacademy") && psw.equals("vjtechacademy"))
+		{
+			L4.setText("Login Successful!!!");
+		}
+		else
+		{
+			L4.setText("Login Fail!!!");
+		}
+			
+	}
+	public static void main(String args[])
+	{
+		LoginFormDemo lfd=new LoginFormDemo();
+		lfd.setVisible(true);
+		lfd.setSize(800,650);
+		lfd.setTitle("VJTech Login Form");
+	}
+}
