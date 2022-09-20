@@ -1,0 +1,25 @@
+### JCheckBox Class #####
+======================
+- It will creates checkbox which has rectangular box and its associated label.
+- JCheckBox class is a predefined class which is present under javax.swing package.
+- JCheckBox class is derived from JToggleButton class.
+- JCheckBox has two states ON and OFF.
+- Here, we can set Images to the checkbox.
+
+***Constructor:
+1) JCheckBox(String str);
+2) JCheckBox(String str,boolean state);
+3) JCheckBox(ImageIcon ii)
+4) JCheckBox(ImageIcon ii, boolean state);
+5) JCheckBox(String str,ImageIcon ii);
+6) JCheckBox(String str,ImageIcon ii,boolean state);
+
+***Methods
+1) void setText(String str);
+2) String getText();
+3) void setIcon(ImageIcon ii);
+4) ImageIcon getIcon();
+5) boolean getState();
+6) boolean isSelected();
+
+ 

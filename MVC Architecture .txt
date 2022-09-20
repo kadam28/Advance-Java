@@ -1,0 +1,17 @@
+######  MVC Architecture ######
+==========================
+- This Architecture contains three stages/Phases (Model-View-Controller)
+1) Information/Properties associated with that components.
+2) The way that the component looks when submitted on the screen.
+3) The way that the component react to the user.
+
+In MVC Architecture:
+
+1) Model:
+- It defined the state information about the component i.e the event and its graphical change when even occurs on a component.
+
+2) View:
+- It defined how that component displayed on the screen.
+
+3) Controller:
+- It controls how the component react to the user.

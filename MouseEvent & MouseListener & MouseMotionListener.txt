@@ -1,0 +1,43 @@
+##### Class => MouseEvent & Interface =>MouseListener & MouseMotionListener #####
+=========================================================
+MouseEvent:
+-----------------------
+- MouseEvent class will generates event when mouse buttons are pressed.
+- Following are the integer constants related to mouse event.
+1) MOUSE_CLICKED - when the user clicked the mouse
+2) MOUSE_DRAGGED - When the user dragged the mouse.
+3) MOUSE_ENTERED - When the mouse entered a component.
+4) MOUSE_EXITED - When the mouse is exited from the component
+5) MOUSE_MOVED - when the mouse moved
+6) MOUSE_PRESSED - when the mouse was pressed.
+7) MOUSE_RELEASED -When the mouse was released
+8) MOUSE_WHEEL - When the mouse wheel was moved
+
+***Constructor:
+MouseEvent(Component src, int type, long when, int modifier, int x, int y, int clicks, boolean triggerpopup)
+
+***Methods:
+1) int getX()
+2) int getY()
+3) int getClickCount()
+4) boolean isPopupTrigger()
+
+MouseListener & MouseMotionListener:
+------------------------------------------------------
+MouseListener:
+
+1) void mouseClicked(MouseEvent me)
+2) void mouseEntered(MouseEvent me)
+3) void mouseExited(MouseEvent me)
+4) void mousePressed(MouseEvent me)
+5) void mouseReleased(MouseEvent me)
+
+MouseMotionListener:
+
+1) void mouseDragged(MouseEvent me)
+2) void mouseMoved(MouseEvent me)
+
+
+
+
+

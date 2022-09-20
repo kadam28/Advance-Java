@@ -1,0 +1,93 @@
+===========================================
+************** Interacting with Database ******************
+===========================================
+JDBC Architecture:
+1) Two-Tier Application Architecture
+2) Three-Tier Application Architecture
+
+***Class 
+-> static Class forname(String className)
+
+***DriverManager class:
+-> static Connection getConnection(String URL)
+-> static Connection getConnection(String URL,String username, String password)
+-> static void deregisterDriver(Driver driver)
+
+***Connection interface:
+-> Statement createStatement();
+-> void close();
+-> void commit();
+-> CallableStament prepareCall(String sql);
+-> PreparedStatement prepareStatement(String sql)
+
+***Statement Interface:
+-> void close();
+-> void cancel();
+-> boolean execute(String sql)
+-> ResultSet executeQuery(String sql)				//select query
+-> int executeUpdate(String sql)						//insert,delete,update
+
+***PreparedStatement  Interface:
+-> boolean execute()
+-> ResultSet executeQuery()				//select query
+-> int executeUpdate()						//insert,delete,update
+-> void setInt(int index, int val);
+-> void setFloat(int index, float val);
+-> void setDouble(int index, double val);
+-> void setShort(int index, short val);
+-> void setLong(int index, long val);
+-> void setString(int index, String val);
+-> void setByte(int index, byte val);
+-> void clearParameters();
+
+***ResultSet Interface:
+-> boolean next()
+-> boolean previous()
+-> boolean first()
+-> boolean last()
+-> void afterLast()
+-> void beforeFirst()
+-> void deleteRow()
+-> int getInt(int column_no)
+-> int getInt(String column_name)
+-> float getFloat(int column_no)
+-> float getFloat(String column_name)
+-> float getDouble(int column_no)
+-> float getDouble(String column_name)
+-> String getString(int column_no)
+-> String getString(String column_name)
+=============================================
+***ResultSetMetaData
+==================
+->  Data about data is known as metadata.
+
+ResultSet rs=stmt.exeuteQuery("select * from vjtech");
+ResultSetMetaData rsmd=rs.getMedaData();
+
+1) int getColumnCount() - return no of columns available in resultset.
+2) String getColumnTypeName(int column_no)	 	- it will return SQL data type of column.
+3) String getTableName(int column_no)
+4) boolean isAutoincrement(int column_no);
+5) boolean isNullable();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

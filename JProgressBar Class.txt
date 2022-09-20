@@ -1,0 +1,16 @@
+##### JProgressBar Class #####
+=========================
+- JProgressBar is a predefined class which is present under javax.swing package.
+- JProgressBar is a component that graphically shows the progress of task.
+- In this progress bar, we can display the task completion percentage. 
+****Constructor:
+1) JProgressBar() - create horizontal progress bar
+2) JProgressBar(int orient) - orient => SwingConstants.VERTICAL, SwingConstants.HORIZONTAL
+3) JProgressBar(int orient,int min,int max)
+4) JProgressBar(BoundedRangeModel model) 
+5) JProgressBar(int min,int max)
+
+***Methods:
+1) void setValue(int val);
+2) void setStringPainted(boolean flag)
+

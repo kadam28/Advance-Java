@@ -1,0 +1,19 @@
+##Choice####
+===========
+- It will create drop down list(pop-up list).
+- Choice is a predefined class
+- We can select only one item from the given list.
+- When user click on choice control then list of items are displayed and user can select one of the item among the list.
+*Constructor
+-----------------
+1) Choice() 
+
+*Method:
+--------------
+1) void add(String item); 
+2) String getSelectedItem();
+3) int getSelectedIndex();
+4) int getItemCount();
+5) void select(int index)
+6) void select(String item);
+7) String getItem(int index);

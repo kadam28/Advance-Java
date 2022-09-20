@@ -1,0 +1,72 @@
+### Layout Manager ####
+====================
+- To apply Layout Manager, we use setLayout().   void setLayout(LayoutManager object);
+- If you want to use setBounds() then please make sure that you have set null to setLayout() method.
+- Following are the list of LayoutManager classes present in java.
+1) FlowLayout
+2) BorderLayout
+3) GridLayout
+4) Card Layout
+5) GridBagLayout
+
+FlowLayout Manager:
+================
+- FlowLayout is a default layout manager.
+- It will add components on the window with center alignment(left to right).
+- Default space between components is 5 pixels.
+- * Constructor:
+I) FlowLayout() - default space between components is 5 pixel and center alignment.
+II) FlowLayout(int alignment) - default space between components is 5 pixel and here, you can set alignment(FlowLayout.LEFT, FlowLayout.CENTER, FlowLayout.RIGHT) of components explicitly. 
+III) FlowLayout(int alignment,int horizonal_gap, int vertical_gap);
+Example:
+---
+********************************************************************************
+GridLayout:
+========
+- GridLayout manager is used to display the components in two dimensional grids.
+- * Constructor:
+-------------------
+1) GridLayout() - it will display the components in single row and single column
+2) GridLayout(int rows, int columns) - you can display components in no of rows and no of columns.
+3) GridLayout(int rows,int columns,int horizonal_gap,int vertical_gap);
+*************************************************************************************************
+### BorderLayout Manager ####
+=========================
+- In this layout manager, four sides and one center area is present.
+- Four Sides ( EAST, WEST, NORTH, SOUTH).
+- We can add components in these five regions. 
+- * Constructor:
+--------------------
+1) BorderLayout();
+2) BorderLayout(int horizonal_gap, int vertical_gap);
+-*Method:
+------------
+void add(Component object, int region);
+
+Where:
+			region -> BorderLayout.EAST, BorderLayout.WEST, BorderLayout.SOUTH, BorderLayout.NORTH, BorderLayout.CENTER.
+			
+*************************************************************************************************
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

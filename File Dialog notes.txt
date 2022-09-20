@@ -1,0 +1,26 @@
+### File Dialog ###
+==============
+- FileDialog => this is predefined class present under java.awt package.
+- This class is used to display file dialog box.
+- This is standard file dialogbox which is provided the operating system.
+- FileDialog is a child window.
+
+-*Constructor:
+------------------
+1) FileDialog(Frame parentwindow,String title)
+2) FileDialog(Frame parentwindow, String title, int mode)			//mode===> 1)FileDialog.LOAD 2)FileDialog.SAVE
+3) FileDialog(Frame parentwindow)
+4) FileDialog(Dialog parentwindow,String title)
+5) FileDialog(Dialog parentwindow, String title, int mode)			//mode===> 1)FileDialog.LOAD 2)FileDialog.SAVE
+6) FileDialog(Dialog parentwindow)
+
+-*Methods:
+--------------
+1) String getFile();
+2) int getMode():
+3) String getDirectory()
+4) void setMode(int mode);
+5) void setFile(String filename);
+
+
+

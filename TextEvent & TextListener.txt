@@ -1,0 +1,14 @@
+##### Class => TextEvent & Interface =>TextListener #####
+===============================================
+TextEvent:
+--------------
+- TextEvent class generates event when user or program enter some characters in TextField or TextArea.
+- The class TextEvent defines integer constant TEXT_VALUE_CHANGED
+
+***Constructor:
+TextEvent(Object src, int id)
+
+TextListener:
+-----------------------
+- void textValueChanged(TextEvent te)
+

@@ -1,0 +1,20 @@
+#### JTextField #####
+==================
+- Single line edit control.
+- JTextField class derived from JTextComponent class.
+- This is most popular component of swing.
+***Constructor:
+1) JTextField();
+2) JTextField(String str);
+3) JTextField(int max_chars);
+4) JTextField(String str,int max_chars);
+
+***Methods:
+1) void setText(String str)
+2) String getText();
+3) void setEchoChar(char ch);
+4) Boolean isEdiatble();
+5) char getEchoChar();
+
+
+

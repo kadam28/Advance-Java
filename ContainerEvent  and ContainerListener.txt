@@ -1,0 +1,16 @@
+##### Class => ContainerEvent & Interface =>ContainerListener #####
+=========================================================
+ContainerEvent:
+-----------------------
+- This will generates event when we add or remove components from the container.
+***Constructor:
+1)ComponentEvent(Component src, int id)
+src - Object which generates event
+id - id of event.
+
+ContainerListener:
+---------------------------
+- This interface contains two methods
+void componentAdded(ContainerEvent ce)
+void componentRemoved(ContainerEvent ce)
+

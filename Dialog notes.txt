@@ -1,0 +1,13 @@
+### Dialog Boxes #####
+- it is used to hold set of related controls.
+- It is used to obtain user input.
+- It is similar to Frame but only difference is it is always child window
+- It don't have menu bars.
+-Two types
+1)Model - all inputs are directed to it until it is closed. This means you can not access other part of program.
+2)Modeless - Input focus is directed to another window.
+
+-*Constructor
+------------------
+1) Dialog(Frame parentwindow, boolean mode)   if mode is true Model Dialog and if mode is false then Modeless Dialog.
+1) Dialog(Frame parentwindow, String str, boolean mode)

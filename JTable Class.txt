@@ -1,0 +1,13 @@
+##### JTable Class #####
+====================
+- JTable is a predefined class which is present under javax.swing package.
+- JTable is a component which displays rows and column of data.
+- If we want to display the data in tabular format then we can use JTable class.
+***Constructor:
+1) JTable(Object data[][],Object ColHeads[])
+
+***Procedure:
+1) Create JTable object with data and column heading.
+2) Create JScrollPane object and add JTable object in it.
+3) Add Scrollpane into the container.
+

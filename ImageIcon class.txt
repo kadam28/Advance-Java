@@ -1,0 +1,15 @@
+##### ImageIcon Class ######
+========================
+-If we want  to apply image on any supported components then we can use ImageIcon class.
+***Constructor:
+
+1) ImageIcon(String filename);
+2) ImageIcon(URL url);
+
+**Methods:
+
+1) int getIconHeight();
+2) int getIconWidth();
+3) void paintIcon(Component obj, Graphics g,int x,int y);
+
+

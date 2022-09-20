@@ -1,0 +1,24 @@
+##### JSlider Class ######
+=====================
+- JSlider class is a predefined class which is present under javax.swing package.
+- JSlider class is a component that allows the user to select a value by moving the knob.
+- The knob is always positioned at the points that match the integer values within specified interval.
+***Constructor:
+1)  JSlider() - it will create HORIZONTAL JSlider with 0 to 100 values.
+2) JSlider(BoundedRangeMode model) - It will create HORIZONTAL slider with specified model. 
+3) JSlider(int orient)	- It will create HORIZONTAL slider with range value 0 to 100. Initila value 50.
+4) JSlider(int min,int max) - HORIZONTAL slider with specified min and max value 
+5) JSlider(int min,int max,int value); - 
+6) JSlider(int orient,int min,int max,int value);
+
+Where:
+		orient = HORIZONTAL,VERTICAL
+
+***Methods:
+1) public void setMinorTickSpacingI(int n)
+2) public void setMajorTickSpacing(int n)
+3) public void setPaintTicks(boolean flag)
+4) public void setPaintLabels(boolean flag)
+5) public void setPaintTracks(boolean flag);
+		
+		

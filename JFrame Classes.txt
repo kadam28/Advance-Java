@@ -1,0 +1,25 @@
+JFrame Class:
+===========
+- JFrame is a standard window which has title bar,menu-bar,borders, minimize,maximum button and resizing corner.
+- It is present under javax.swing package.
+*Constructor:
+--------------
+1) JFrame() - create window without title.
+2) JFrame(String title) - create window with title.
+
+*Methods:
+------------
+1) void setVisible(true/false)
+2) void setSize(width,height)
+3) void setTitle(String title)
+4) void setDefaultCloseOperation(int operation);
+
+Where:
+	operation:- JFrame.EXIT_ON_CLOSE
+					 JFrame.HIDE_ON_CLOSE
+					 JFrame.DO_NOTHING_ON_CLOSE
+
+- Above given three static constants of WindowConstants interface.
+
+	
+	

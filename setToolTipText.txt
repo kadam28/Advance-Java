@@ -1,0 +1,7 @@
+###### JToolTip Class ######
+=======================
+- It is used to display one pop-up message when your mouse pointer stays on a component.
+- This pop-up message can be a short description  or labelled information of any component.
+- We can add tooltip text to almost all the components of Java Swing.
+- To add tool tip to a component object. we have to use following method.
+- void setToolTipText(String str);

@@ -1,0 +1,29 @@
+#### JTextArea #######
+==================
+- JTextArea is a multi-line Textfield.
+- Here, we can provide multiple lines as input.
+- JTextArea is a predefined class which is present under javax.swing package.
+-**Constructor.
+--------------------
+1) JTextArea();
+2) JTextArea(int rows,int cols);
+3) JTextArea(String str);
+4) JTextArea(String str,int rows,int cols);
+
+-**Methods:
+----------------
+1) String getText();
+2) void setText(String str);
+3) boolean isEditable();
+4) void setEditable(boolean flag);
+5) String getSelectedText();
+6) void append(String str);
+7) void insert(String str, int index);
+8) void replaceRange(String str, int startindex, int endindex);
+
+
+
+
+
+
+

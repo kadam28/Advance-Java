@@ -1,0 +1,18 @@
+###### JComboBox #####
+=====================
+- Swing provides JComboBox class that creates a combo box.
+- It will create drop down list(pop-up list).
+- JComboBox is a predefined class
+- We can select only one item from the given list.
+- When user click on combo box control then list of items are displayed and user can select one of the item among the list.
+
+***Constructor:
+1) JComboBox();
+2) JComboBox(Vector obj);
+
+***Method:
+
+1) void addItem(Object obj);
+2) void removeItem(Object obj);
+3) void removeAllItems();
+

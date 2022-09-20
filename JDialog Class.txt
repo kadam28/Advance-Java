@@ -1,0 +1,10 @@
+#### JDialog Class ####
+===================
+- JDialog class is a predefined class which is present under javax.swing package.
+- JDialog class is used for creating dialog window.
+- It is always appear as child window.
+- It is used to create any type of custom dialog boxes with the use of JOptionPane.
+***Constructor:
+1) JDialog() -  it will create model less dialog without title and without parent window object.
+2) JDialog(Frame obj) - It will create model less dialog without title and with parent window Frame object.
+3) JDialog(Frame obj, String title, boolean flag) flag=> TRUE then model and flag=>FALSE then model less.

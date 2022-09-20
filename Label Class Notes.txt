@@ -1,0 +1,16 @@
+###Label###
+-----------------
+- Label is a String which is used to interact with the user.
+* Constructor:
+--------------------
+1) Label() - it will create empty label
+2) Label(String str) - it will create label with string.
+3) Label(String str,int how) - it will create label with string str and alignment specified by how. how -> (Label.LEFT,Label.RIGHT,Label.CENTER)
+
+*Methods:
+-------------
+1) void setText(String str)
+2) String getText()
+3) void setAlignment(int how)
+4) int getAlignment()
+ 

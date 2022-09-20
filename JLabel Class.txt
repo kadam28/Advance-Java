@@ -1,0 +1,17 @@
+#### JLabel Class ####
+==================
+
+***Constructor:
+1) JLabel(ImageIcon ii);
+2) JLabel(String str);
+3) JLabel(String str, ImageIcon ii, int alignment);  //alignment -> JLabel.RIGHT, JLabel.LEFT, JLabel.CENTER, JLabel.LEADING, JLabel.TRAILING
+4) JLabel();
+
+***Methods:
+1) void setText(String str)
+2) String getText();
+3) void setAlignment(int alignment);
+4) int getAlignment();
+5) void setIcon(ImageIcon ii);
+6) ImageIcon getIcon();
+

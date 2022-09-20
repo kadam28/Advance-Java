@@ -1,0 +1,16 @@
+<html>
+<body>
+			<script>
+					function check()
+					{
+							var regex=new RegExp("abc");
+							var str=document.getElementById("txt").value;
+							var res=regex.test(str);
+							document.getElementById("demo").innerHTML=res;
+					}
+			</script>
+			Enter Text:<input type="text" id="txt">
+			<input type="button" value="check" onclick="check()">
+			<p id="demo"></p>
+</body>
+</html>

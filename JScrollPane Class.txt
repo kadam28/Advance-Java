@@ -1,0 +1,16 @@
+#### JScrollPane Class ####
+======================
+- JScrollPane is a predefined class which is present under javax.swing package
+- JScrollPane class provides rectangular scrollable area in which components can be viewed.
+*** Constructor:
+1) JScrollPane(Component obj)
+2) JScrollPane(int vertical, int horizontal)
+3) JScrollPane(Component obj,int vertical,int horizontal)
+
+Where:
+	vertical,horizontal=> this is integer constants(defined in ScrollPaneConstants interface) which defines vertical and horizontal scrollbar.
+									- HORIZONTAL_SCROLLBAR_ALWAYS
+									- VERTICAL_SCROLLBAR_ALWAYS
+									- HORIZONTAL_SCROLLBAR_AS_NEEDED
+									- VERTICAL_SCROLLBAR_AS_NEEDED
+	

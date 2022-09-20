@@ -1,0 +1,66 @@
+####### SCROLLBAR #########
+===========================
+- Scrollbar is a predefined class present under java.awt package
+- We use scrollbar for horizontal and vertical movement of components or text.                                                                                                                                                                                                                               
+- There are two types of scrollbar
+1) Horizontal Scrollbar
+2) Vertical Scrollbar
+
+- *Constructor:
+--------------------
+1) Scrollbar() - it will create vertical scrollbar.
+2) Scrollbar(int type) - here, we can creates either vertical or horizontal scrollbar..type==> Scrollbar.VERTICAL or Scrollbar.Horizontal
+3) Scrollbar(int type, int intial_value, int thumb_size, int min_value, int max_value);
+
+Example:
+Scrollbar s1= new Scrollbar(Scrollbar.VERTICAL, 0, 10, 0,100);
+
+- *Methods:
+-----------------
+
+1) void setValues(int intial_value, int thumb_size, int min_value, int max_value);
+2) int getMinimum()
+3) int getMaximum();
+4) int getValue();
+5) void setValue(int value);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

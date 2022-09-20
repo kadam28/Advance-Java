@@ -1,0 +1,30 @@
+##### JRadioButton Class ########
+=============================
+
+- It will create radio button.
+- It is used to select one option from multiple options.
+- It is widely used in exam systems or quiz.
+- JRadioButton class is derived from JToggleButton class.
+- It is present under javax.swing package.
+- Here, we can set image to the radio button.
+- If user selected radio button then automatically deselected previous radio button. For this you need to create ButtonGroup class object and use add methods to add all radio button in this group.
+void add(JRadioButton obj);
+
+***Constructor:
+1) JRadioButton(String str)
+2) JRadioButton(String str, boolean state);
+3) JRadioButton(ImageIcon ii);
+4) JRadioButton(ImageIcon ii, boolean state);
+5) JRadioButton(String str, ImageIcon ii);
+6) JRadioButton(String str, ImageIcon ii, boolean state);
+
+***Methods:
+1) void setText(String str);
+2) String getText()
+3) void setIcon(ImageIcon ii);
+4) ImageIcon getIcon();
+5) void setEnabled(boolean state);
+6) boolean isSelected();
+
+
+

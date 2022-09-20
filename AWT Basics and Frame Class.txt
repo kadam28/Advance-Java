@@ -1,0 +1,23 @@
+********************************************************
+**Advance Java | Lecture-1,2,3 | Date 01-03 July 2020**
+********************************************************
+==================================
+UNIT-1 AWT(Abstract Window Toolkit):
+==================================
+- AWT help us to create and manage GUI (Graphical User Interface).
+- Package 1) java.awt.*  2) java.awt.event.*
+-Window creation (Frame, Applet, Panel)
+
+##Frame:
+======
+- Frame is a standard window which has title bar,menu-bar,minimize,maximum button and resizing corner.
+*Constructor:
+--------------
+1) Frame() - create window without title.
+2) Frame(String title) - create window with title.
+
+*Methods:
+------------
+1) void setVisible(true/false)
+2) void setSize(width,height)
+3) void setTitle(String title)

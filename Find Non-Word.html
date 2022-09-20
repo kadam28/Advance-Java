@@ -1,0 +1,18 @@
+<html>
+<head>
+			<script language="javascript" type="text/javascript">
+					function CheckExp()
+					{
+						var  x1=/\W/;
+						var str=document.getElementById("tf1").value;
+						var result=x1.test(str);
+						document.getElementById("tf2").innerHTML=result;
+					}
+			</script>
+</head>
+<body>
+			Enter Text:<input type="text" id="tf1">
+			<input type="button" value="Check" onclick="CheckExp()">
+			<p id="tf2"></p>
+</body>
+</html>

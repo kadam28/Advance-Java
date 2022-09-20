@@ -1,0 +1,19 @@
+#### JTabbedPane Class #####
+=========================
+- JTabbedPane is a predefined class which is present under javax.swing package.
+- It will creates multiple tabs and each tab has its own title and related components.
+- We can see only one tab at a time. We can not open multiple tabs at same time.
+- We use JTabbedPane for providing configuration related options.
+*** Constructor:
+1) JTabbedPane();
+
+*** Method:
+1) void addTab(String title,Component obj);
+
+*** Procedure:
+1) Define required no of Panel classes which contains different components.
+2) Create JTabbedPane object
+3) Use addTab() method to add tabs into JTabbedPane( title and component object)
+4) Add JTabbedPane object into Container.
+ 
+

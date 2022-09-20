@@ -1,0 +1,25 @@
+### TextField ###
+-----------------------
+
+- TextField is a predefined class which provides a single line editable textbox.
+- This control used to accept input from the user.
+***Constructor:
+-----------------
+1) TextField() - create textfield without any text.
+2) TextField(int max_chars) - create textfield with max_chars value.
+3) TextField(String str) - create textfield with initial string value.
+4) TextField(String str,int max_chars) - create textfield with initial string and max_chars value.
+
+***Methods:
+---------------
+1) String getText();
+2) void setText(String str);
+3) void setEchoChar(char ch)
+4) char getEchoChar();
+5) boolean isEditable();
+6) void setEditable(boolean flag);
+7) String getSelectedText();
+8) void select(int start_index,int end_index)
+
+
+

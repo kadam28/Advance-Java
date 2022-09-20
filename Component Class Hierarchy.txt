@@ -1,0 +1,53 @@
+********************************************************
+**Advance Java | Lecture-4 | Date 04 July 2020**
+********************************************************
+##Component Class Hierarchy###
+============================
+1) Component:
+------------------
+- Top level class
+- Abstract class that contains all class and methods of windows components. 
+- This class also responsible for creating and managing events.
+- Methods:
+I) void setLocation(int x,int y)
+II) void setSize(int width,int height)
+III) void setBounds(int x,int y,int width,int height)
+IV) void setLayout(Layoutmanager object);
+
+- Remember, while using above methods layout manager set to NULL.
+============================
+2) Container:
+----------------
+- This class is a subclass of Component class.
+- This will contains another control like button,label,textfield,etc.
+- Methods:
+I) void add(Component object);
+II) void remove(Component object);
+=============================
+
+3) Window:
+--------------
+- This class is a super class of Frame,Canvas,etc
+- We can't create object of window directly.
+===============================
+4) Frame:
+-----------
+- Frame is a standard window which has title bar,menu-bar,minimize,maximum button and resizing corner.
+*Constructor:
+1) Frame() - create window without title.
+2) Frame(String title) - create window with title.
+
+*Methods:
+1) void setVisible(true/false)
+2) void setSize(width,height)
+3) void setTitle(String title)
+===============================
+5) Panel:
+------------
+- Panel is a window which does not have titlebar, menubar,borders,resizing corners.
+- We can add components on panel and finally we can add panel on window(Frame,Applet).
+===================================
+6)Canvas:
+-------------
+- Canvas is a blank window on which we can draw different graphical objects.
+

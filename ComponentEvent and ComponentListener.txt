@@ -1,0 +1,18 @@
+##### Class => ComponentEvent & Interface =>ComponentListener #####
+=========================================================
+ComponentEvent:
+-----------------------
+- ComponentEvent class generates event when certain parameters value got changes like visibility, size, position, etc
+- There are four component related events:
+1) COMPONENT_HIDDEN
+2) COMPONENT_SHOWN
+3) COMPONENT_MOVED
+4) COMPONENT_RESIZED
+
+ComponentListener:
+---------------------------
+- It contains four different methods:
+1) void componentHidden(ComponentEvent ce)
+2) void componentShown(ComponentEvent ce)
+3) void componentMoved(ComponentEvent ce)
+4) void componentResized(ComponentEvent ce)

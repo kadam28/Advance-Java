@@ -1,0 +1,23 @@
+##### JTree Class #####
+====================
+- JTree is a predefined class which is present under javax.swing package.
+- Hierarchical view of data is represented by using JTree.
+- This component allows use to expand or collapse the individual subtree.
+- JTree will derived properties of JComponent.
+
+*** Constructor:
+1) JTree(Hashtable ht)
+2) JTree(Object obj[])
+3) JTree(TreeNode tn)
+4) JTree(Vector v);
+
+- DefaultMutableTreeNode class implements MutableTreeNode interface.
+1) DefaultMutableTreeNode(Object obj)
+**Method
+void add(MutableTreeNode child);
+
+***Procedure:
+1) Create JTree Object
+2) Create JscrollPane
+3) Add tree to the scrollpane.
+4) Add ScrollPane to the container.

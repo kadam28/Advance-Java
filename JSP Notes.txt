@@ -1,0 +1,111 @@
+JSP:
+==========
+- JSP stands for Java Server Page.
+- JSP is similar to ASP(Active Server Page).
+- JSP used at server side.
+- JSP do not <SERVLET> tag in an html file.
+- Every block of code is called as scriplet.
+- The scriplet is begin with <% and ends with %>
+- JSP has got four predefined variables.
+1) request: This is servlet request and is object of HttpServletRequest class.
+2) response: This is servlet respone and is object of HttpServletResponse class.
+3) out: It is an output writer and is an object of PrintWriter.
+4) in: It is input reader and is an object of BufferedReader class.
+- Extension of JSP file is .jsp. Eg hello.jsp
+- If we want run above jsp file then we can use URL http://server:port/hello.jsp.
+Example of hello.jsp file
+================
+<html>
+<body>
+<%
+			if(request.getParameter("name")==null)
+			{
+					out.println("No user entered");
+			}
+			else
+			{
+					out.println("Hello "+request.getParameter("name"));
+			}
+%>
+</body>
+</html>
+======================
+Expression and Directives:
+======================
+- As we know that JSP use scriplets. JSP also use expressions and directive.
+- A JSP expression begin with <%= and ends with %>.
+- A JSP directive begin with <%@ and ends with %>. We use directive like <%@ varname="value" %>
+There are total six variables that can be used.
+1) content_type:
+E.g - <%@ content_type="text/plain" %>
+
+2) import:
+E.g - <%@ import="java.io.*,java.util.*,java.lang.*"%>
+
+3) extends:
+E.g - <%@ extends="SuperClass1" %>
+
+4) implements:
+E.g - <%@ implements="interface name" %>
+
+5) method:
+E.g - <%@ method="doGet" %>
+
+6) language:
+E.g - <%@ language="java" %>
+==================================
+Life Cycle of JSP Page:
+==================
+Following steps are involved in JSP Life Cycle:
+
+1) Compilation
+2) Initialization
+3) Execution
+4) Cleanup
+
+JSP Compilation:
+-----------------------
+- Here, we can compile the jsp page.
+- In compilation process, following phases are present
+I) Parsing the JSP
+II) Converting JSP into Servlet
+3) Compilation of the servlet.
+
+JSP Initialization:
+------------------------
+- It is used to initialize database connection, create lookup tables and open files, etc.
+
+JSP Execution:
+---------------------
+- In this phase, JSP engine trying to process request  and will try to generate response.
+public void _jspService(HttpServletRequest req, HttpServletResponse res)
+{
+		//body
+}
+
+JSP Cleanup:
+-------------------
+-In this phase, JSP got removed from the container. it means, whatever the resources allocated for the JSP got removed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

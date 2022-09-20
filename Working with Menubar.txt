@@ -1,0 +1,55 @@
+Working with Menu and MenuBar:
+===========================
+- A menubar is most useful component.
+- Menubar present in top level of window.
+- Three different classes (Menu,MenuBar,MenuItem)
+- MenuBar contains Menus and Menus contains MenuItems.
+MenuBar Class:
+----------------------
+- First of all, we will create MenuBar class object.
+-* Constructor: 
+							MenuBar();
+							
+- one of the important method of menubar is "void setMenuBar(MenuBar object)"
+							
+Menu Class:
+----------------
+- Menu is a predefined class and it is used to create Menus.
+- *Constructor:
+1) Menu() - it will create empty Menu.
+2) Menu(String str) - it will create Menu with name specified in str.
+3) Menu(String str,boolean flag) -  it will create Menu with name specified in str, if flag is true then pop-up menu can be removed and allowed to float free in Menubar. And if it false then it will remain attach to the Menubar.
+
+-*MenuItem Class:
+--------------------------
+- *Constructor:
+1) MenuItem();
+2) MenuItem(String str) - it will create MenuItem with name.
+3) MenuItem(String str,MenuShortcut key)
+
+*Methods:
+=============
+1) void setEnabled(boolean flag)
+2) boolean isEnable();
+3) void setLabel(String str);
+4)String getLabel();
+
+###CheckboxMenuItem Class#######
+-*Constructor
+1)CheckboxMenuItem()
+2)CheckboxMenuItem(String str);
+3)CheckboxMenuItem(String Str,boolean flag);
+-*Methods:
+------------
+1) void setState(boolean flag)
+2) boolean getState();
+
+
+
+
+
+
+
+
+
+

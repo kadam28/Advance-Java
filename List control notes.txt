@@ -1,0 +1,22 @@
+#### List ######
+=============
+- List is a predefined class which provides list of items with multiple selection option.
+- It also provides scrollbar facility.
+- **Constructor:
+---------------------
+1) List() - it will create list control with single selection allowed.
+2) List(int visible_rows) - it will create list control with visible rows.
+3) List(int visible_rows,boolean flag) - if flag is true then multiple selection allowed otherwise single selection allowed.
+
+-**Methods:
+-----------------
+1) void add(String item)
+2) void add(String item,int index);
+3) String getSelectedItem();
+4) int getSelectedIndex();
+5) String[] getSelectedItems();
+6) int [] getSelectedIndexes();
+7) int getItemCount();
+8) void select(int index)
+9) String getItem(int index);
+

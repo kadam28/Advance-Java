@@ -1,0 +1,23 @@
+##### Class -> ActionEvent & Interface -> ActionListener #####
+==================================================================
+ActionEvent:
+-----------------
+- An ActionEvent class generates event when you press button, list item is double clicked, menu-item is selected.
+***Constructor:
+1) ActionEvent(Object Source,int id, String cmd)
+2) ActionEvent(Object Source, int id, String cmd, int modifier)
+3) ActionEvent(Object source, int id, String cmd, long when, int modifier)
+
+modifier - ALT_MASK, CLTR_MASK, SHIFT_MASK, META_MASK, ACTION_PERFORMED
+
+- String getActionCommand() - it will return label string of component.
+- int getModifier() - it will return modifier value.
+- long getWhen() - it return time of event.
+
+ActionListener:
+--------------------
+- This is interface which defines following method that is invoked when an action event occurs.
+public void actionPerformed(ActionEvent ae)
+{
+	//body of method
+}

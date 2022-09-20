@@ -1,0 +1,28 @@
+#### Class -> ItemEvent  & Interface -> ItemListener ####
+=============================================
+ItemEvent:
+-------------
+- ItemEvent class generates event when we select checkbox, when checkable menu item is selected, etc.
+- There are two types of ItemEvent.
+1) DESELECTED  - When user deselected an item.
+2) SELECTED - When user select an item.
+
+- ItemEvent class defines one integer constant ITEM_STATE_CHANGED
+
+***Constructor:
+1) ItemEvent(ItemSelectable source, int id, Object entry, int state)
+
+***Methods:
+1) Object getItem(); 
+2) ItemSelectable getItemSelectable()
+3) int getStateChange()
+
+ItemListener:
+-----------------
+- ItemListener interface executes following method when ItemEvent occurs.
+
+public void itemStateChanged(ItemEvent ie)
+{
+	//body
+}
+

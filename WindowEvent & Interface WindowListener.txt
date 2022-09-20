@@ -1,0 +1,40 @@
+##### Class => WindowEvent & Interface =>WindowListener #####
+=========================================================
+WindowEvent:
+-----------------------
+- WindowEvent class defines 10 types of different window events.
+-  Following are the different integer constants:
+1) WINDOW_ACTIVATED
+2) WINDOW_DEACTIVITED
+3) WINDOW_OPENED
+4) WINDOW_CLOSED
+5) WINDOW_CLOSING
+6) WINDOW_ICONIFIED
+7) WINDOW_DEINCONFIED
+8) WINDOW_GAIN_FOCUS
+9) WINDOW_LOST_FOCUS
+10) WINDOW_STATE_CHANGED
+
+***Constructor:
+1) WindowEvent(Window src, int id)
+2) WindowEvent(Window src, int id, Window other)
+3) WindowEvent(Window src, int id,int fromstate, int tostate)
+4) WindowEvent(Window src, int id, Window other, int fromstate, int tostate)
+
+***Methods:
+- Window getOppositeWindow()
+- int getOldState()
+- int getNewState()
+
+WindowListener:
+------------------------------------------------------
+- WindowListener listen WindowEvent.
+- Following methods are called when WindowEvent occurred.
+1) void windowActivated(WindowEvent we)
+2) void windowDeactivated(WindowEvent we)
+3) void windowOpened(WindowEvent we)
+4) void windowClosed(WindowEvent we)
+5) void windowClosing(WindowEvent we)
+6) void windowIconfied(WindowEvent we)
+7) void windowDeiconfied(WindowEvent we)
+8) void windowLostFocus(WindowEvent we)

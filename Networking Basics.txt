@@ -1,0 +1,195 @@
+##### InetAddress #######
+- java.net package
+- InetAddress stands for Internet Address
+- InetAddress is a combination of IP address and Host Name.
+- InetAddress is a predefined class which is present under java.net package.
+
+***Factory Methods:
+1) static InetAddress getLocalHost()
+2) static InetAddress getByName(String hot_name)
+3) static InetAddress getAllByName(String hot_name)
+4) static InetAddress getByAddress(String IP_Address)
+
+- All these four methods will throws UnKnownHostException
+
+***Instance Methods:
+1) boolean equals(object obj)
+2) byte[] getAddress()
+3) String getHostAddress();
+4) String getHostName();
+5) String toString();
+6) boolean isMulticastAddress()
+=============================================
+URL:
+=================
+- URL stands for Uniform Resource Locator.
+- Here, we need to handle the exception MalformedURLException.
+- URL string consists of four part
+1) Network protocol
+2) Host Name or IP address
+3) port
+4) File path or resource location
+Syntax:
+				Protocol://hostnameorIPaddress:portno/filepath
+Example:
+				http://www.vjtechacademy.com/about.html
+
+***Constructor:
+1) URL(String urlstring)
+2) URL(String protocolName, String HostName, int port, String filepath);
+3) URL(String protocolName, String HostName,String filepath);
+***Methods:
+1) String getProtocol();
+2) int getPort();
+3) String getHost();
+4) String getFile();
+======================================
+URLConnection:
+=============
+- It is used to access attributes of remote resources.
+**Methods:
+1) int getContentLength()
+2) String getContentType()
+3) long getDate();
+4) long getlastModified()
+5) long getExpiration()
+6) InputStream getInputStream()
+=========================================
+TCP/IP server (ServerSocket) and client (Socket)
+=============
+- ServerSocket and Socket both are predefined classes which are present under java.net package.
+
+***Socket class(client):
+Constructors:
+1) Socket(String HostName,int port)
+2) Socket(InetAddress addr,int port)
+
+Methods:
+1) InetAddress getInetAddress();
+2) int getPort();
+3) int getLocalPort();
+4) InputStream getInputStream()
+5) OutputStream getOutputStream()
+6) void close()
+
+***ServerSocket Class(Server):
+Constructors:
+1) ServerSocket(int port)
+2) ServerSocket(int port , int maxqueue)
+3) ServerSocket(int port,int maxqueue,InetAddress addr);
+4) accept();
+=================================================
+Datagrams:
+===========
+- Here, we use two predefined classes Datagrampacket & DatagramSocket.
+***Constructors of Datagrampacket:
+1) Datagrampacket(byte data[],int size)
+2) Datagrampacket(byte data[],int offset,int size)
+3) Datagrampacket(byte data[],int size,InetAddress addr,int port)
+4) Datagrampacket(byte data[],int offset, int size,InetAddress addr,int port);
+***methods of Datagrampacket:
+1) InetAddress getAddress();
+2) int getPort();
+3) byte[] getData();
+4) int getLength();
+5) int getOffset();
+6) void setAddress(InetAddress addr)
+7) void setData(byte data[]);
+8) void setLength(int length)
+9) void setPort(int port)
+
+***Constructors of DatagramSocket:
+1) DatagramSocket()
+2) DatagramSocket(int port)
+3) DatagramSocket(int port,InetAddress addr)
+4) DatagramSocket(DatagramSocketImpl obj)
+*** Methods of DatagramSocket:
+1) void send(Datagrampacket obj)
+2) void receive(Datagrampacket obj)
+3) int getLocalport();
+4) int getPort();
+5) void connect(InetAddress addr,int port);
+6) void disconnect();
+7) void close();
+===========================
+Security with JAVA
+------------------
+- java.security package
+- java.security.Permission
+- java.security.PermissionCollection
+- java.io.FilePermission
+- java.security.UnresolvedPermission
+- java.net.SocketPermission
+- java.security.BasicPermission
+- java.lang.RuntimePermission
+- java.awt.AWTPermission
+- java.net.NetPermission
+- java.security.AllPermission
+- javax.security.auth.AuthPermission
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

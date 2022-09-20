@@ -1,0 +1,23 @@
+#### JButton Class ####
+===================
+- It provides Push Button.
+- We can set Label or Image on Button.
+- Swing provides three types of buttons which is derived from AbstractButton class.
+- They are JButton, JToggleButton,JRadioButton
+***Constructor:
+1) JButton(String str)
+2) JButton(ImageIcon ii)
+3) JButton(String str,ImageIcon ii);
+4) JButton();
+
+***Methods:
+
+1) void setLabel(String str)
+2) String getLabel();
+3) void setIcon(ImageIcon ii);
+4) ImageIcon getIcon();
+
+5) void setDisabledIcon(ImageIcon ii);
+6) void setPressedIcon(ImageIcon ii);
+7) void setSelectedIcon(ImageIcon ii);
+8) void setRolloverIcon(ImageIcon ii);

@@ -1,0 +1,83 @@
+==================================================
+CheckBox:
+--------------
+- CheckBox is a rectangular box which has associated label.
+- state ON or OFF.
+- It is used to select multiple options among group.
+
+*Constructor:
+-----------------
+
+1) Checkbox() - it will create checkbox without label
+2) Checkbox(String str) - it will create checkbox with label specified in str.
+3) Checkbox(String str,boolean state) - 
+4) Checkbox(String str,boolean state, CheckboxGroup obj)
+
+*Methods:
+-------------
+
+1) void setLabel(String str)
+2) String getLabel();
+3) boolean getState();
+4) void setState(boolean state);
+===========================================
+CheckboxGroup:
+---------------------
+- it will convert checkbox into radio-button
+*Constructor:=> CheckboxGroup();
+-*Method:=> Checkbox getSelectedCheckbox();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

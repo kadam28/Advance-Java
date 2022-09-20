@@ -1,0 +1,32 @@
+#### TextArea #######
+==================
+- TextArea is a multi-line Textfield.
+- Here, we can provide multiple lines as input.
+- TextArea is a predefined class which is present under java.awt package.
+-**Constructor.
+--------------------
+1) TextArea();
+2) TextArea(int maxcols,int maxrows);
+3) TextArea(String str);
+4) TextArea(String str,int maxcols,int maxrows);
+5) TextArea(String str,int maxcols,int maxrows,int scrollbar_type);
+
+Where:
+			scrollbar_type = SCROLLBARS_BOTH, SCROLLBARS_NONE, SCROLLBARS_VERTICAL_ONLY, SCROLLBARS_HORIZONTAL_ONLY
+-**Methods:
+----------------
+1) String getText();
+2) void setText(String str);
+3) boolean isEditable();
+4) void setEditable(boolean flag);
+5) String getSelectedText();
+6) void append(String str);
+7) void insert(String str, int index);
+8) void replaceRange(String str, int startindex, int endindex);
+
+
+
+
+
+
+

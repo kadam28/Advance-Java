@@ -1,0 +1,37 @@
+##### Class => KeyEvent & Interface =>KeyListener #####
+=========================================================
+KeyEvent:
+-----------------------
+- When keyboard input is occurred then KeyEvent is generated.
+- There are three different types of key event.    
+1) KEY_PRESSED
+2) KEY_RELEASED	
+3) KEY_TYPED
+- There are different integer constant defined by KeyEvent class
+VK_ALT			VK_LEFT
+VK_CANCEL		VK_PAGE_DOWN
+VK_CONTROL	 	VK_PAGE_UP
+VK_DOWN			VK_RIGHT
+VK_ENTER		VK_SHIFT
+VK_ESCAPE		VK_UP
+
+VK - Virtual Key
+
+***Constructor:
+1)KeyEvent(Component src, int id, long when, int modifier, int code, char ch)
+
+***Methods:
+
+char getKeyChar();
+int getKeyCode();
+
+KeyListener:
+---------------------------
+- In this interface, following methods are present.
+
+1) void KeyPressed(KeyEvent ke)
+2) void KeyReleased(KeyEvent ke)
+3) void KeyTyped(KeyEvent ke)
+
+
+
